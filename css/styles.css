@@ -1,0 +1,123 @@
+@font-face {
+    .sevillana-regular {
+            font-family: "Sevillana", cursive;
+            font-weight: 400;
+            font-style: normal;
+        }}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #000;
+    background: #e894f3
+}
+
+header {
+    display: flex;
+    padding: 5px;
+    color: #efefef;
+    background-color: #860c96;
+    border-bottom: solid 1px #000;
+    justify-content: center;
+    font-family: Sevillana;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 5em;
+
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    margin: 2% 5%;
+}
+
+img {
+    max-height: 400px;
+    border-radius: 20%;
+    padding: .25em;
+}
+
+/*button styling*/
+#flowerList {
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    display:  inline-block;
+}
+
+button {
+    background: #e34bf7;
+    font-size: 16px;
+    width:max-content;
+    border-radius: 20%;
+    padding: 10px 20px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*modal styles*/
+#modal-backdrop {
+    display: none;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+#modal-backdrop.visible {
+    display: block;
+}
+
+.modal {
+    display: none;
+    position: absolute;
+    padding: 10px;
+    border: solid 1px #555;
+    background-color: #fff;
+    z-index: 99999;
+    width: 300px;
+    height: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.visible {
+    display: block;
+}
+
+.modal-content {
+    width: 300px;
+    height: 300px;
+}
+
+.noteContent {
+    width: 300px;
+    height: 300px;
+}
+
+#noteContent {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.buttonModal.hidden {
+    display: none;
+    justify-content: center;
+}
+
+p {
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+}

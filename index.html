@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sevillana&display=swap" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <title>Petal to the Meddle</title>
+</head>
+
+<body>
+    <header>
+        <h1>Petal to the Meddle</h1>
+    </header>
+    <section id="container">
+        <div id="flowerList">
+            <ul id="listContainer">
+                <li><button id="loveButton">Love</button></li>
+                <li><button id="lossButton">Loss</button></li>
+                <li><button id="friendButton">Friendship</button></li>
+                <li><button id="illWishesButton">Ill Wishes</button></li>
+                <li><button id="successButton">Success</button></li>
+                <li><button id="luckButton">Luck</button></li>
+                <li><button id="thoughtfulButton">Thoughtfulness</button></li>
+                <li><button id="apologyButton">Apologies</button></li>
+                <li><button id="otherButton">Other</button></li>
+                <li><button id="viewBouquet">View Bouquet</button></li>
+                <li><button id="clearBouquetButton">Clear Bouquet</button></li>
+            </ul>
+        </div>
+        <div id="flower-img-container">
+            <!--Flower images added dynamically here-->
+        </div>
+    </section>
+
+    <!--Modal Dialog-->
+    <div id="flowerModal" class="modal">
+        <div class="modalContent">
+            <h2 id="flowerName"></h2>
+            <p id="flowerDescription"></p>
+            <div id="bouquetButton"></div>
+            <button id="addToBouquet">Add to Bouquet</button>
+            <button id="cancel">Cancel</button>
+        </div>    
+    </div>
+    <div id="modal-backdrop"></div>
+
+    <section id="container">
+    <div class="bouquetContainer">
+    <!--VIEW BOUQUET-->
+    <div id="bouquetDescription">
+        <!--generation bouquet here-->
+    </div>
+
+    <div id="displayNoteContent"></div>
+    <!--Note button, appears when view bouquet is clicked-->
+    <div class="buttonModal hidden" id="addNoteHere">
+        <button id="addNoteButton">Add Note</button>
+    </div>
+    </section>
+
+    <!--Note Modal-->
+    <div class="modal" id="addNoteModal">
+        <section>
+            <textarea name="noteContent" id="noteContent" cols="80" rows="8"></textarea>
+            <span id="noteContentMessage"></span>
+        </section>
+        <footer>
+            <button id="cancelNoteButton">Cancel</button>
+            <button id="saveNoteButton">Save</button>
+        </footer>
+    </div>
+    <div id="modal-backdrop"></div>
+</body>
+
+<script src="js/scripts.js"></script>
+</html>
